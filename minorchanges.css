@@ -1,0 +1,613 @@
+@import url(/css/iframeUsed.css);
+
+:root {
+    --light: #fff;
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #111a2b;
+    --danger: #D32F2F;
+    --light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+/* Dashboard-----------------> */
+.content main .insights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 24px;
+    margin-bottom: 36px;
+}
+
+.content main .insights li {
+    padding: 14px;
+    background: var(--light);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+    cursor: pointer;
+}
+
+.content main .insights li .fa-solid {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content main .insights li:nth-child(1) .fa-solid {
+    background: var(--light-primary);
+    color: var(--primary);
+}
+
+.content main .insights li:nth-child(2) .fa-solid {
+    background: var(--light-warning);
+    color: var(--warning);
+}
+
+.content main .insights li:nth-child(3) .fa-solid {
+    background: var(--light-success);
+    color: var(--success);
+}
+
+.content main .insights li:nth-child(4) .fa-solid {
+    background: var(--light-danger);
+    color: var(--danger);
+}
+
+.content main .insights li .info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.content main .insights li .info p {
+    color: var(--dark);
+}
+
+.accordion {
+    background-color: var(--dark-grey);
+    color: #444;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+table {
+    margin-bottom: 40px;
+}
+
+.panel .latest-transaction thead th {
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    color: var(--light);
+    align-items: center;
+}
+
+.panel .latest-transaction tbody td {
+    text-align: center;
+    color: var(--light);
+}
+
+/* thead tr th */
+.panel .latest-transaction thead th:nth-child(1) {
+    background-color: var(--success);
+    width: 20vw;
+}
+
+.panel .latest-transaction thead th:nth-child(2) {
+    background-color: var(--danger);
+    width: 20vw;
+}
+
+.panel .latest-transaction thead th:nth-child(3) {
+    background-color: var(--success);
+    width: 10vw;
+}
+
+.panel .latest-transaction thead th:nth-child(4) {
+    background-color: var(--danger);
+    width: 15vw;
+}
+
+.panel .latest-transaction thead th:nth-child(5) {
+    background-color: var(--success);
+    width: 15vw;
+
+}
+
+.panel .latest-transaction thead th:nth-child(6) {
+    background-color: var(--danger);
+    width: 20vw;
+
+}
+
+/*thead tr td */
+.panel .latest-transaction tbody .rgrgrg td:nth-child(1) {
+    width: 20vw;
+    background-color: var(--danger);
+}
+
+.panel .latest-transaction tbody .rgrgrg td:nth-child(2) {
+    background-color: var(--success);
+    width: 20vw;
+}
+
+.panel .latest-transaction tbody .rgrgrg td:nth-child(3) {
+    background-color: var(--danger);
+    width: 10vw;
+}
+
+.panel .latest-transaction tbody .rgrgrg td:nth-child(4) {
+    background-color: var(--success);
+    width: 15vw;
+}
+
+.panel .latest-transaction tbody .rgrgrg td:nth-child(5) {
+    background-color: var(--danger);
+    width: 15vw;
+
+}
+
+.panel .latest-transaction tbody .rgrgrg td:nth-child(6) {
+    background-color: var(--success);
+    width: 20vw;
+}
+
+.panel .latest-transaction tbody .grgrgr td:nth-child(1) {
+    width: 20vw;
+    background-color: var(--success);
+}
+
+.panel .latest-transaction tbody .grgrgr td:nth-child(2) {
+    background-color: var(--danger);
+    width: 20vw;
+}
+
+.panel .latest-transaction tbody .grgrgr td:nth-child(3) {
+    background-color: var(--success);
+    width: 10vw;
+}
+
+.panel .latest-transaction tbody .grgrgr td:nth-child(4) {
+    background-color: var(--danger);
+    width: 15vw;
+}
+
+.panel .latest-transaction tbody .grgrgr td:nth-child(5) {
+    background-color: var(--success);
+    width: 15vw;
+
+}
+
+.panel .latest-transaction tbody .grgrgr td:nth-child(6) {
+    background-color: var(--danger);
+    width: 20vw;
+}
+
+/*--------------- Dashboard end   --------------------*/
+/*---------------account start--------------------*/
+
+.Update-Change {
+    display: flex;
+}
+
+.Update-Change .tablink:nth-child(1) {
+    border-bottom: 2px solid var(--primary);
+}
+
+.Update-Change .tablink.active:nth-child(1) {
+    border-left: 2px solid var(--danger);
+    border-top: 2px solid var(--danger);
+    border-right: 2px solid var(--danger);
+    border-bottom: none;
+    color: var(--danger);
+}
+
+.Update-Change .tablink:nth-child(2) {
+    border-bottom: 2px solid var(--danger);
+}
+
+.Update-Change .tablink.active:nth-child(2) {
+    border-left: 2px solid var(--primary);
+    border-top: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    border-bottom: none;
+    color: var(--primary);
+}
+
+
+/* Card class */
+
+.card {
+    color: var(--light);
+    float: left;
+    width: 30%;
+    background: rgb(38, 38, 38);
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+}
+
+.card .img {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.card .role p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.card .role p span {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--light-danger);
+    padding: 10px 0px;
+}
+
+.social-media a i {
+    font-size: 38px;
+}
+
+.card .bottom-section .title {
+    display: block;
+    font-size: 17px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.card .bottom-section .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.card .bottom-section .row .item {
+    flex: 30%;
+    text-align: center;
+    padding: 5px;
+    color: rgba(170, 222, 243, 0.721);
+}
+
+.card .bottom-section .row .item .big-text {
+    font-size: 12px;
+    display: block;
+}
+
+.card .bottom-section .row .item .regular-text {
+    font-size: 9px;
+}
+
+.card .bottom-section .row .item:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.126);
+    border-right: 1px solid rgba(255, 255, 255, 0.126);
+}
+
+.Update-form form {
+    padding: 44px;
+    align-items: center;
+}
+
+#Update .Update-form form .row {
+    display: flex;
+    padding: 10px;
+}
+
+.Update-form form .row .col-1 {
+    width: 20%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Update-form form .row .col-2 {
+    width: 80%;
+}
+
+.col-2 input {
+    width: 90%;
+    padding: 5px 10px;
+    height: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    color: var(--dark);
+    font-weight: 400;
+}
+
+.col-2 .btn-update {
+    width: 40%;
+    text-transform: uppercase;
+    float: right;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 7px 10px;
+    font-size: 14px;
+}
+
+.btn-update:hover {
+    background: var(--success);
+    color: var(--light);
+}
+
+
+#Change .Change-form form .row {
+    display: flex;
+    padding: 10px;
+}
+
+.Change-form form .row .col-1 {
+    width: 20%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Change-form form .row .col-2 {
+    width: 80%;
+}
+
+.Change-form form {
+    padding: 44px;
+    align-items: center;
+}
+/* Staff Account -------------------->*/
+.Add-form form {
+    align-items: center;
+}
+
+#Add .Add-form form .row {
+    display: flex;
+    padding: 10px;
+}
+
+.Add-form form .row .col-1 {
+    width: 20%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Add-form form .row .col-2 {
+    width: 80%;
+}
+
+.Add-form form .row .col-2 select {
+    width: 90%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    color: var(--dark);
+    font-weight: 400;
+}
+h1{
+    display: flex;
+    gap: 10px;
+}
+h1 a{
+    display: flex;
+}
+
+h1 .logo img{
+    margin-left: -10px;
+}
+h1 .logo {
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    z-index: 500;
+    box-sizing: content-box;
+}
+
+h1 .logo .logo-name span {
+    color: var(--dark);
+}
+.Add-Manage{
+    display: flex;
+}
+
+
+.Add-Manage .tablink:nth-child(1) {
+    border-bottom: 2px solid var(--primary);
+}
+
+.Add-Manage .tablink.active:nth-child(1) {
+    border-left: 2px solid var(--danger);
+    border-top: 2px solid var(--danger);
+    border-right: 2px solid var(--danger);
+    border-bottom: none;
+    color: var(--danger);
+}
+
+.Add-Manage .tablink:nth-child(2) {
+    border-bottom: 2px solid var(--danger);
+}
+
+.Add-Manage .tablink.active:nth-child(2){
+    border-left: 2px solid var(--primary);
+    border-top: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    border-bottom: none;
+    color: var(--primary);
+}
+
+.Staff-Manage {
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+.Staff-Manage tr:hover{
+    background-color: var(--dark-grey);
+}
+td{
+    border: 1px solid var(--dark);
+    text-align: center;
+    border-collapse: collapse;
+}
+#Manage .Staff-Manage thead th {
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    color: var(--light);
+    align-items: center;
+}
+
+#Manage .Staff-Managen tbody td {
+    text-align: center;
+    color: var(--light);
+}
+
+/* thead tr th */
+#Manage .Staff-Manage thead th:nth-child(1) {
+    background-color: var(--success);
+    width: 5vw;
+}
+
+#Manage .Staff-Manage thead th:nth-child(2) {
+    background-color: var(--danger);
+    width: 20vw;
+}
+
+#Manage .Staff-Manage thead th:nth-child(3) {
+    background-color: var(--success);
+    width: 15vw;
+}
+
+#Manage .Staff-Manage thead th:nth-child(4) {
+    background-color: var(--danger);
+    width: 15vw;
+}
+#Manage .Staff-Manage thead th:nth-child(5) {
+    background-color: var(--success);
+    width: 20vw;
+
+}
+#Manage .Staff-Manage thead th:nth-child(6) {
+    background-color: var(--danger);
+    width: 10vw;
+
+}
+#Manage .Staff-Manage thead th:nth-child(7) {
+    background-color: var(--primary);
+    width: 15vw;
+
+}
+td button:nth-child(1){
+    background-color: var(--danger);
+    color: var(--light);
+    padding: 5px;
+    cursor: pointer;
+    margin: 4px;
+}
+td button:nth-child(2){
+    background-color: var(--success);
+    color: var(--light);
+    padding: 5px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+
+.transaction-history thead th {
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    color: var(--light);
+    align-items: center;
+}
+
+.transaction-history tbody td {
+    text-align: center;
+    color: var(--light);
+}
+
+/* thead tr th */
+.transaction-history thead th:nth-child(1) {
+    background-color: var(--success);
+    width: 5vw;
+}
+
+.transaction-history thead th:nth-child(2) {
+    background-color: var(--danger);
+    width: 15vw;
+}
+
+.transaction-history thead th:nth-child(3) {
+    background-color: var(--success);
+    width: 15vw;
+}
+
+.transaction-history thead th:nth-child(4) {
+    background-color: var(--danger);
+    width: 5vw;
+}
+
+.transaction-history thead th:nth-child(5) {
+    background-color: var(--success);
+    width: 10vw;
+
+}
+
+.transaction-history thead th:nth-child(6) {
+    background-color: var(--danger);
+    width: 15vw;
+
+}
+.transaction-history thead th:nth-child(7) {
+    background-color: var(--success);
+    width: 15vw;
+
+}
+.transaction-history thead th:nth-child(8) {
+    background-color: var(--primary);
+    width: 20vw;
+
+}
+.transaction-history{
+
+    border-collapse: collapse;
+}
+.transaction-history td{
+background-color: var(--dark-grey);
+    text-align: center;
+}
+.transaction-history tbody tr td:nth-child(8) button{
+    background-color: var(--danger);
+    border-radius: 8px;
+}
