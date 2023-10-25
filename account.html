@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Copied Links from cdn  -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- links -->
+        <link rel="stylesheet" href="/css/minorchanges.css">
+    </head>
+
+    <body>
+        <div class="content">
+            <main>
+                <div class="header">
+                    <div class="left">
+                        <h1>Admin Profile</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">
+                                    Dashboard
+                                </a></li>
+                            /
+                            <li><a href="#" class="active">Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Update-Change">
+                    <button class="tablink" onclick="openPage(event,'Update')" id="defaultOpenSF">Update
+                        Profile</button>
+                    <button class="tablink" onclick="openPage(event,'Change')">Change Password</button>
+                </div>
+                <div id="Update" class="OpenPage">
+                    <div class="card">
+                        <div class="img"><img src="/img/Atanu-CV-Pic.jpg" alt=""></div>
+                        <div class="role">
+                            <p>Atanu Shil<span>[Admin]</span></p>
+                        </div>
+                        <div class="info">
+                            <div class="bottom-section">
+                                <div class="row row1">
+                                    <div class="item">
+                                        <span class="regular-text">UID</span>
+                                        <span class="big-text">32301221139</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="regular-text">College</span>
+                                        <span class="big-text">BCRAPC</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="regular-text">Contact No</span>
+                                        <span class="big-text">9832118794</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="Update-form">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-1"><label for="forName">Name</label></div>
+                                <div class="col-2"><input type="text" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forEmail">Email</label></div>
+                                <div class="col-2"><input type="email" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forContact">Contact </label></div>
+                                <div class="col-2"><input type="tel" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forAddress">Address</label></div>
+                                <div class="col-2"><input type="text" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forPhoto">Photo</label></div>
+                                <div class="col-2"><input type="file" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-2"><input type="submit" class="btn-update"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="Change" class="OpenPage">
+                    <div class="Change-form">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-1"><label for="forEmail">Email</label></div>
+                                <div class="col-2"><input type="email" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forEmail">Old Password</label></div>
+                                <div class="col-2"><input type="password" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forContact">New Password</label></div>
+                                <div class="col-2"><input type="password" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forAddress">New Confirm Password</label></div>
+                                <div class="col-2"><input type="password" name="" id="" required></div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="col-1"><label for="forPhoto">Photo</label></div>
+                                <div class="col-2"><input type="file" name="" id="" required></div>
+                            </div> -->
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-2"><input type="submit" class="btn-update"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        </main>
+        </div>
+        <script>
+        </script>
+        <script src="/src/minorChanges.js"></script>
+    </body>
+
+</html>

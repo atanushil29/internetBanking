@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Copied Links from cdn  -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- links -->
+        <link rel="stylesheet" href="/css/minorchanges.css">
+    </head>
+
+    <body>
+        <div class="content">
+            <main>
+                <div class="header">
+                    <div class="left">
+                        <h1>
+                            <a href="#" class="logo">
+                                <img src="/img/logo.png" alt="" style="height: 50px;">
+                                <div class="logo-name"><span>Am</span>Sar</div>
+                            </a>
+                            Staff
+                        </h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">
+                                    Dashboard
+                                </a></li>
+                            /
+                            <li><a href="#" class="active">Staff</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Add-Manage">
+                    <button class="tablink" onclick="openPage(event,'Add')" id="defaultOpenSF" >Add Staff</button>
+                    <button class="tablink" onclick="openPage(event,'Manage')">Manage Staff</button>
+                </div>
+                <div class="OpenPage" id="Add">
+                    <h1>Fill All Fields</h1>
+                    <div class="Add-form">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-1"><label for="forEmail">Staff Name</label></div>
+                                <div class="col-2"><input type="text" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forEmail">Staff Phone No</label></div>
+                                <div class="col-2"><input type="number" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forContact">Staff Email</label></div>
+                                <div class="col-2"><input type="email" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forAddress">Staff UID No</label></div>
+                                <div class="col-2"><input type="number" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forPhoto">Gender</label></div>
+                                <div class="col-2">
+                                    <select name="" id="" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forAddress">Staff Password</label></div>
+                                <div class="col-2"><input type="password" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><label for="forAddress">Profile Photo</label></div>
+                                <div class="col-2"><input type="file" name="" id="" required></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-2"><button type="submit" class="btn-update">Add Staff</button></div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="OpenPage" id="Manage">
+                    <table class="Staff-Manage">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Staff Number</th>
+                                <th>Contact</th>
+                                <th>Email</th>
+                                <th>Gender</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Atanu Shil</td>
+                                <td>32301221139</td>
+                                <td>9832118794</td>
+                                <td>atanushil358@gmail.com</td>
+                                <td>Male</td>
+                                <td>
+                                    <button>Delete</button>
+                                    <button>Manage</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Atanu Shil</td>
+                                <td>32301221139</td>
+                                <td>9832118794</td>
+                                <td>atanushil358@gmail.com</td>
+                                <td>Male</td>
+                                <td>
+                                    <button>Delete</button>
+                                    <button>Manage</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Atanu Shil</td>
+                                <td>32301221139</td>
+                                <td>9832118794</td>
+                                <td>atanushil358@gmail.com</td>
+                                <td>Male</td>
+                                <td>
+                                    <button>Delete</button>
+                                    <button>Manage</button>
+                                </td>
+                            </tr> <tr>
+                                <td>1</td>
+                                <td>Atanu Shil</td>
+                                <td>32301221139</td>
+                                <td>9832118794</td>
+                                <td>atanushil358@gmail.com</td>
+                                <td>Male</td>
+                                <td>
+                                    <button>Delete</button>
+                                    <button>Manage</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Atanu Shil</td>
+                                <td>32301221139</td>
+                                <td>9832118794</td>
+                                <td>atanushil358@gmail.com</td>
+                                <td>Male</td>
+                                <td>
+                                    <button>Delete</button>
+                                    <button>Manage</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+        <script src="/src/minorChanges.js"></script>
+        <!-- <script src="/src/script.js"></script> -->
+    </body>
+
+</html>
