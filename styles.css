@@ -1,4 +1,5 @@
-@import url(/css/iframeUsed.css);
+/* @import url(/css/iframeUsed.css); */
+@import url(iframeUsed.css);
 .sidebar {
     position: fixed;
     top: 0;
