@@ -1,5 +1,5 @@
+/* @import url(/css/iframeUsed.css); */
 @import url(iframeUsed.css);
-
 :root {
     --light: #fff;
     --primary: #1976D2;
@@ -20,7 +20,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 24px;
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
 }
 
 .content main .insights li {
